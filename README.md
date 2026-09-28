@@ -51,12 +51,20 @@ Each stage can be switched off independently for ablation.
 ## Quick start
 
 ```sh
+git clone https://github.com/levilou2517/Demerzel.git && cd Demerzel
+python3 -m venv .venv && source .venv/bin/activate
+pip install --upgrade pip setuptools wheel && pip install -e .
+
 demerzel init
 demerzel ingest examples/demo.json
 demerzel query "What is the capital of France?"
 demerzel inspect-memory mem_turn_s1_000001
 python tests/run_tests.py
 ```
+
+No network, GPU or API key is needed at runtime — the default providers are
+deterministic mocks. Full instructions (offline install, Docker,
+reproducing a published result): **`docs/deployment.md`**.
 
 Or from Python:
 
@@ -134,6 +142,7 @@ review before P1/P2.
 
 | doc | contents |
 |-----|----------|
+| `docs/deployment.md` | install, first run, offline install, Docker, reproduction |
 | `docs/architecture.md` | modules, interfaces, data flow |
 | `docs/api.md` | public API and CLI |
 | `docs/experiments.md` | Exp 1–4 protocols, configs, metrics |
