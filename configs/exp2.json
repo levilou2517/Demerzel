@@ -1,0 +1,10 @@
+{
+  "run_id": "exp2",
+  "storage": {"backend": "sqlite", "path": "results/exp2/exp2.db", "synchronous": "FULL"},
+  "retrieval": {"w_semantic": 1.0, "w_ppr": 0.6, "w_pointer": 1.0, "w_context_distance": 0.4},
+  "decay": {"enabled": true, "scale": 1.0, "mode": "context"},
+  "mpe": {"enabled": true, "eta": 0.05},
+  "ablations": {"decay": true, "mpe": true, "graph": true},
+  "trace": {"enabled": true, "output_dir": "results"},
+  "dataset_version": "synthetic-v1"
+}

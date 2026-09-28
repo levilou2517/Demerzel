@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "demerzel"
+version = "0.1.0"
+description = "LLM external-memory research prototype: can retrieval accessibility be learned independently from memory persistence?"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Demerzel Research Prototype" }]
+dependencies = [
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+networkx = ["networkx>=2.8"]
+test = ["pytest>=7.0"]
+
+[project.scripts]
+demerzel = "demerzel.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["demerzel*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

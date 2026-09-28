@@ -1,0 +1,10 @@
+{
+  "session_id": "s1",
+  "turns": [
+    {"text": "The capital of France is Paris."},
+    {"text": "Paris is the largest city in France."},
+    {"text": "Photosynthesis converts light into chemical energy."},
+    {"text": "Water boils at 100 degrees Celsius at sea level."},
+    {"text": "The chemical energy produced powers the plant's growth."}
+  ]
+}

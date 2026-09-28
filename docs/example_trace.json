@@ -1,0 +1,62 @@
+{
+  "run_id": "run_local",
+  "query": "What is the capital of France?",
+  "candidates": [
+    {
+      "memory_id": "mem_turn_s1_000001",
+      "semantic_score": 1.0,
+      "ppr_score": 0.0,
+      "pointer_strength": 1.0,
+      "context_distance": 0.350509,
+      "final_score": 1.859796
+    },
+    {
+      "memory_id": "mem_turn_s1_000002",
+      "semantic_score": 0.375849,
+      "ppr_score": 0.0,
+      "pointer_strength": 1.0,
+      "context_distance": 0.350509,
+      "final_score": 1.235645
+    },
+    {
+      "memory_id": "mem_turn_s1_000003",
+      "semantic_score": 0.06195,
+      "ppr_score": 0.0,
+      "pointer_strength": 1.0,
+      "context_distance": 0.530086,
+      "final_score": 0.849915
+    },
+    {
+      "memory_id": "mem_turn_s1_000004",
+      "semantic_score": 0.0,
+      "ppr_score": 0.0,
+      "pointer_strength": 1.0,
+      "context_distance": 0.640846,
+      "final_score": 0.743662
+    }
+  ],
+  "used_evidence": [
+    "mem_turn_s1_000001",
+    "mem_turn_s1_000002",
+    "mem_turn_s1_000003",
+    "mem_turn_s1_000004"
+  ],
+  "mpe": 0.0754696667166842,
+  "pointer_updates": [
+    {
+      "memory_id": "mem_turn_s1_000001",
+      "old": 0.704329,
+      "new": 0.708103,
+      "reason": "positive_mpe",
+      "mpe": 0.07547
+    }
+  ],
+  "metrics": {
+    "elapsed_s": 0.0028,
+    "candidate_count": 4,
+    "token_count": 87,
+    "route": "vector",
+    "sufficient": true,
+    "fallback_layer": "answer"
+  }
+}

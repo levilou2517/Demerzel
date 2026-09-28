@@ -1,0 +1,13 @@
+# Demerzel runtime dependencies.
+# The core package runs on the Python standard library plus numpy; NetworkX and
+# PyYAML are optional (see pyproject.toml optional-dependencies).
+numpy>=1.24
+
+# Optional: original graph reference backend (V1.md names NetworkX).
+# networkx>=2.8
+
+# Optional: YAML configs (JSON always works).
+# pyyaml>=6.0
+
+# Test runner.
+pytest>=7.0

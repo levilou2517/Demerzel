@@ -1,0 +1,54 @@
+# ── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# ── Virtual environments ────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Test / coverage artifacts ───────────────────────────────────────────────
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# ── Demerzel runtime artifacts (generated, not source) ──────────────────────
+# Databases, ingested data and experiment outputs are reproducible from
+# `demerzel init` + `demerzel run-experiment ...`; they are deliberately not
+# versioned so a clone stays clean and results are regenerated, never trusted
+# from a stale checkout.
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+data/
+results/
+
+# Keep the documented example artifacts that ARE source.
+!docs/example_trace.json
+
+# ── Local configuration ─────────────────────────────────────────────────────
+demerzel.config.json
+local.config.json
+
+# ── Editors / OS ────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
