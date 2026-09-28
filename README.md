@@ -95,11 +95,14 @@ demerzel/
   assemblage/   query router, sufficiency router, reranker, context, answerer
   trace/        standard JSONL trace schema
   evaluation/   metrics + the four experiment protocols
-configs/        experiment configs
-docs/           architecture, api, experiments, invariants,
-                cold_start, mpe_timing, test_report, benchmark
-tests/          the acceptance + invariant suite
+configs/        experiment configs (exp1.json, exp2.json)
+docs/           architecture, api, experiments, invariants, cold_start,
+                mpe_timing, deployment, benchmark, test_report, example_trace
+examples/       demo.json — the sample corpus used by the quick start
+tests/          the acceptance + invariant suite (run_tests.py, 78 tests)
 scripts/        experiment reproduction scripts
+V1.md           the build plan this prototype implements
+pyproject.toml  package metadata + the `demerzel` console entry point
 ```
 
 ## Guarantees (the invariants)
